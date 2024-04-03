@@ -1,0 +1,17 @@
+*
+!.gitignore
+!alacritty
+!alacritty/**
+!git
+!git/**
+!nvim
+!nvim/**
+!script
+!script/**
+!tmux
+!tmux/**
+!zsh
+!zsh/**
+!README.md
+!screen.png
+!wall.jpeg

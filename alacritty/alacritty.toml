@@ -1,0 +1,32 @@
+import = [
+  "~/.config/alacritty/themes/github_dark_default.toml",
+  # "~/.config/alacritty/transparency.toml",
+]
+
+[font]
+size = 14
+
+[font.bold]
+style = "Bold"
+
+[font.italic]
+style = "Italic"
+
+[font.normal]
+family = "RobotoMono Nerd Font"
+style = "Regular"
+
+[mouse]
+hide_when_typing = true
+
+[shell]
+program = "/bin/zsh"
+
+[window]
+decorations = "none"
+startup_mode = "Maximized"
+option_as_alt = "Both"
+
+[window.padding]
+x = 40
+y = 40
