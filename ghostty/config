@@ -1,0 +1,14 @@
+background = #161724
+cursor-color = #ffffff
+cursor-text = #000000
+font-family = RobotoMono Nerd Font
+font-size = 11
+font-style = Medium
+font-style-bold = Bold
+font-style-bold-italic = Bold Italic
+font-style-italic = Medium Italic
+foreground = #ffffff
+theme = Dracula
+window-decoration = false
+window-padding-x = 30
+window-padding-y = 30

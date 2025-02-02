@@ -19,7 +19,7 @@ vim.opt.ignorecase = true
 
 -- List chars
 vim.opt.list = true
-vim.opt.listchars:append({ tab = "> ", nbsp = "•" })
+vim.opt.listchars:append({ tab = "  ", nbsp = "•" })
 
 -- Tab width
 vim.opt.tabstop = 2

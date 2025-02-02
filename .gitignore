@@ -2,6 +2,8 @@
 !.gitignore
 !alacritty
 !alacritty/**
+!ghostty
+!ghostty/**
 !git
 !git/**
 !nvim

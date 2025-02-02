@@ -2,6 +2,7 @@
 
 - openSUSE Tumbleweed
 - GNOME
+- ghostty
 - zsh
 - tmux
 - neovim

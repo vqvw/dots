@@ -1,10 +1,11 @@
+[general]
 import = [
-  "~/.config/alacritty/themes/github_dark_default.toml",
+  "~/.config/alacritty/themes/dracula.toml",
   # "~/.config/alacritty/transparency.toml",
 ]
 
 [font]
-size = 14
+size = 11
 
 [font.bold]
 style = "Bold"
@@ -14,12 +15,11 @@ style = "Italic"
 
 [font.normal]
 family = "RobotoMono Nerd Font"
-style = "Regular"
 
 [mouse]
 hide_when_typing = true
 
-[shell]
+[terminal.shell]
 program = "/bin/zsh"
 
 [window]
