@@ -1,13 +1,16 @@
+adjust-cell-width = -10%
 background = #161724
 cursor-color = #ffffff
 cursor-text = #000000
 font-family = RobotoMono Nerd Font
-font-size = 11
+font-size = 12
 font-style = Medium
 font-style-bold = Bold
 font-style-bold-italic = Bold Italic
 font-style-italic = Medium Italic
 foreground = #ffffff
+macos-option-as-alt = true
+mouse-hide-while-typing = true
 theme = Dracula
 window-decoration = false
 window-padding-x = 30

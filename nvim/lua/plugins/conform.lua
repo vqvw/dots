@@ -13,12 +13,12 @@ return {
   },
   opts = {
     formatters_by_ft = {
-      -- Shell
-      bash = { "beautysh" },
-      sh = { "beautysh" },
-      zsh = { "beautysh" },
       -- Go
       go = { "goimports" },
+      -- Java
+      java = { "google-java-format" },
+      -- Lua
+      lua = { "stylua" },
       -- Prettier
       css = { "prettierd" },
       html = { "prettierd" },
@@ -30,8 +30,10 @@ return {
       typescript = { "prettierd" },
       typescriptreact = { "prettierd" },
       yaml = { "prettierd" },
-      -- Lua
-      lua = { "stylua" },
+      -- Shell
+      bash = { "beautysh" },
+      sh = { "beautysh" },
+      zsh = { "beautysh" },
       -- SQL
       sql = { "sql_formatter" },
     },

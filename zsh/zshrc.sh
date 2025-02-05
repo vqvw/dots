@@ -23,10 +23,6 @@ export JAVA_HOME='/usr/lib64/jvm/java-17-openjdk-17'
 export JRE_HOME='/usr/lib64/jvm/jre-17'
 export TMUX_TMPDIR='/tmp'
 
-export NODE_ENV='development'
-export BABEL_ENV='development'
-export HOST='localhost'
-
 
 #
 #   Path

@@ -18,7 +18,7 @@ Map("n", "<leader>gs", GitShow, "Open new tab and run `git show <ref>`")
 
 -- Tabs
 Map("n", "<C-t>", "<Cmd>tabe<CR>", "New tab")
-Map("n", "<C-Del>", "<Cmd>tabc<CR>", "Close tab")
+Map("n", "<BS>", "<Cmd>tabc<CR>", "Close tab")
 
 -- Copy current file path to clipboard
 Map("n", "<leader>%", "<Cmd>let @+=@%<CR>", "Copy current file path to clipboard")
