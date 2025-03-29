@@ -13,20 +13,5 @@ return {
       ["<C-v>"] = false,
       ["<C-r>"] = "actions.refresh",
     },
-    float = {
-      border = border,
-    },
-    preview = {
-      border = border,
-    },
-    progress = {
-      border = border,
-    },
-    ssh = {
-      border = border,
-    },
-    keymaps_help = {
-      border = border,
-    },
   },
 }

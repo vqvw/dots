@@ -39,12 +39,11 @@ Map("n", "<leader>h", "<Cmd>set hlsearch!<CR>", "Toggle hlsearch")
 -- Toggle word wrap
 Map("n", "<leader>w", "<Cmd>set wrap!<CR>", "Toggle word wrap")
 
+-- Toggle spell
+Map("n", "<leader>z", "<Cmd>set spell!<CR>", "Toggle spell")
+
 -- View messages
 Map("n", "<leader>m", "<Cmd>messages<CR>", "View messages")
-
--- Snippets
-Map({ "i", "s" }, "<Tab>", Snippet.jumpForwards, "Snippet jump forwards")
-Map({ "i", "s" }, "<S-Tab>", Snippet.jumpBackwards, "Snippet jump backwards")
 
 -- Terminal mode
 Map("t", "<Esc>", "<C-\\><C-n>", "Exit terminal-mode")

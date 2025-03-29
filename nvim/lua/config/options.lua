@@ -40,3 +40,9 @@ vim.opt.clipboard = "unnamedplus"
 
 -- Word wrap
 vim.opt.wrap = false
+
+-- Winborder
+vim.opt.winborder = border
+
+-- Conceal level
+vim.opt.conceallevel = 0

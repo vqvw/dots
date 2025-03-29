@@ -28,7 +28,7 @@ export TMUX_TMPDIR='/tmp'
 #   Path
 #
 
-export PATH="$PATH:/usr/local/go/bin:$HOME/.npm-global/bin:$HOME/.cargo/bin:$HOME/.local/share/nvim/mason/bin:$HOME/x/flutter/sdk/bin:$JAVA_HOME/bin:$HOME/x/java/apache-maven-3.9.9/bin"
+export PATH="$PATH:/usr/local/go/bin:$HOME/.npm-global/bin:$HOME/.cargo/bin:$HOME/.local/share/nvim/mason/bin:$HOME/x/flutter/sdk/bin:$JAVA_HOME/bin:$HOME/x/java/apache-maven-3.9.9/bin:$HOME/AppImage/bin"
 
 
 #
@@ -89,4 +89,14 @@ function gcr() {
 function search() {
   q=$(echo "$@" | sed 's/\s\+/+/g')
   "$BROWSER" "https://www.google.co.uk/search?q=$q"
+}
+
+# open notes
+function notes() {
+  nvim ~/Documents/Notes/notes.md
+}
+
+# open to-do
+function todo() {
+  nvim ~/Documents/Notes/todo.md
 }

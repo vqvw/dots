@@ -24,20 +24,3 @@ function UpdateHl(name, val)
   end
   vim.api.nvim_set_hl(0, name, ExistingHl)
 end
-
-Snippet = {
-  jumpForwards = function()
-    if vim.snippet.active({ direction = 1 }) then
-      vim.snippet.jump(1)
-    else
-      vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, false, true), "n", false)
-    end
-  end,
-  jumpBackwards = function()
-    if vim.snippet.active({ direction = -1 }) then
-      vim.snippet.jump(-1)
-    else
-      vim.cmd.normal("V<")
-    end
-  end,
-}

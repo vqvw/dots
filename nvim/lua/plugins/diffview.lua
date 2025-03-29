@@ -12,10 +12,5 @@ return {
       "<Cmd>DiffviewOpen main..HEAD<CR>",
       desc = "Open Diffview compare to main",
     },
-    {
-      "<leader>q",
-      "<Cmd>DiffviewClose<CR>",
-      desc = "Close Diffview",
-    },
   },
 }

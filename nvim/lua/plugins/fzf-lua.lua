@@ -9,7 +9,6 @@ return {
     { "<leader>:", "<Cmd>FzfLua commands<CR>", desc = "Search commands" },
     { "<leader><Tab>", "<Cmd>FzfLua tabs<CR>", desc = "Search tabs" },
     { "<leader><leader>", "<Cmd>FzfLua files<CR>", desc = "Search find files" },
-    --
     { "<leader>sc", "<Cmd>FzfLua commands<CR>", desc = "Colorschemes" },
     { "<leader>sd", "<Cmd>FzfLua diagnostics_workspace<CR>", desc = "Diagnostics" },
     { "<leader>sf", "<Cmd>FzfLua filetypes<CR>", desc = "Filetypes" },
@@ -24,12 +23,12 @@ return {
     { "<leader>sr", "<Cmd>FzfLua resume<CR>", desc = "Resume" },
     { "<leader>ss", "<Cmd>FzfLua lsp_document_symbols<CR>", desc = "Document symbols" },
     { "<leader>sw", "<Cmd>FzfLua grep_cword<CR>", desc = "Grep word under cursor" },
+    { "<leader>sz", "<Cmd>FzfLua spell_suggest<CR>", desc = "Spell suggest" },
   },
   config = function()
     require("fzf-lua").setup({
       winopts = {
         backdrop = 100,
-        border = border,
         preview = { hidden = "hidden" },
       },
     })

@@ -19,7 +19,7 @@ return {
         { name = "path" },
       },
       window = {
-        completion = { border = border },
+        completion = { border = border, scrollbar = false },
         documentation = { border = border },
       },
     }

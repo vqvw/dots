@@ -13,29 +13,23 @@ return {
   },
   opts = {
     formatters_by_ft = {
-      -- Go
-      go = { "goimports" },
-      -- Java
-      java = { "google-java-format" },
-      -- Lua
-      lua = { "stylua" },
-      -- Prettier
+      bash = { "beautysh" },
       css = { "prettierd" },
+      go = { "goimports" },
       html = { "prettierd" },
+      java = { "google-java-format" },
       javascript = { "prettierd" },
       javascriptreact = { "prettierd" },
       json = { "prettierd" },
+      lua = { "stylua" },
       markdown = { "prettierd" },
       scss = { "prettierd" },
+      sh = { "beautysh" },
+      sql = { "sql_formatter" },
       typescript = { "prettierd" },
       typescriptreact = { "prettierd" },
       yaml = { "prettierd" },
-      -- Shell
-      bash = { "beautysh" },
-      sh = { "beautysh" },
       zsh = { "beautysh" },
-      -- SQL
-      sql = { "sql_formatter" },
     },
     formatters = {
       beautysh = {
