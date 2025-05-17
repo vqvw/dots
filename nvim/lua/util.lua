@@ -24,3 +24,12 @@ function UpdateHl(name, val)
   end
   vim.api.nvim_set_hl(0, name, ExistingHl)
 end
+
+function OrganizeImports()
+  vim.lsp.buf.code_action({
+    apply = true,
+    context = {
+      only = { "source.organizeImports" },
+    },
+  })
+end

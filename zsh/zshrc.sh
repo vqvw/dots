@@ -96,7 +96,7 @@ function notes() {
   nvim ~/Documents/Notes/notes.md
 }
 
-# open to-do
-function todo() {
-  nvim ~/Documents/Notes/todo.md
+# create tmux session
+function create_sessions() {
+  sh ~/.config/tmux/create_sessions.sh
 }

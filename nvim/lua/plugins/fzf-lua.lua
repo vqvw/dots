@@ -28,7 +28,6 @@ return {
   config = function()
     require("fzf-lua").setup({
       winopts = {
-        backdrop = 100,
         preview = { hidden = "hidden" },
       },
     })

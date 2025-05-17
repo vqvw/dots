@@ -6,9 +6,15 @@ function _find() {
   zle reset-prompt
 }
 
-# go to location a pre-defined location
+# go to location
 function _goto() {
   cd "$(cat ~/locations.txt | fzf)"
+  zle reset-prompt
+}
+
+# go to dir in cwd
+function _ls() {
+  cd "$(ls -d */ | fzf)"
   zle reset-prompt
 }
 
@@ -19,13 +25,7 @@ function _open() {
   zle reset-prompt
 }
 
-# find and open file in neovim
-function _nvim() {
-  nvim $(eval $FZF_DEFAULT_COMMAND | fzf)
-  zle reset-prompt
-}
-
-zle -N _find && bindkey "^F" _find
-zle -N _goto && bindkey "^G" _goto
+zle -N _find && bindkey "^[f" _find
+zle -N _goto && bindkey "^[k" _goto
+zle -N _ls && bindkey "^[l" _ls
 zle -N _open && bindkey "^O" _open
-zle -N _nvim && bindkey "^V" _nvim

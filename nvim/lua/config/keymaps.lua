@@ -45,6 +45,15 @@ Map("n", "<leader>z", "<Cmd>set spell!<CR>", "Toggle spell")
 -- View messages
 Map("n", "<leader>m", "<Cmd>messages<CR>", "View messages")
 
+-- Go to definition
+Map("n", "gd", vim.lsp.buf.definition, "Go to definition")
+
+-- Organize imports
+Map("n", "<leader>o", OrganizeImports, "Organize imports")
+
+-- Add diagnostics to quickfix
+Map("n", "<leader>d", vim.diagnostic.setqflist, "Add diagnostics to quickfix")
+
 -- Terminal mode
 Map("t", "<Esc>", "<C-\\><C-n>", "Exit terminal-mode")
 
