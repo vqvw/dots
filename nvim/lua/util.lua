@@ -33,3 +33,12 @@ function OrganizeImports()
     },
   })
 end
+
+function RemoveUnusedImports()
+  vim.lsp.buf.code_action({
+    apply = true,
+    context = {
+      only = { "source.removeUnusedImports" },
+    },
+  })
+end

@@ -6,6 +6,7 @@ return {
       mode = { "n", "v" },
       "<F3>",
       function()
+        OrganizeImports()
         require("conform").format({ lsp_fallback = true })
       end,
       desc = "Format",

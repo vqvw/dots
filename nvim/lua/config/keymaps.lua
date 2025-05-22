@@ -48,8 +48,8 @@ Map("n", "<leader>m", "<Cmd>messages<CR>", "View messages")
 -- Go to definition
 Map("n", "gd", vim.lsp.buf.definition, "Go to definition")
 
--- Organize imports
-Map("n", "<leader>o", OrganizeImports, "Organize imports")
+-- Remove unused imports
+Map("n", "<leader>o", RemoveUnusedImports, "Organize imports")
 
 -- Add diagnostics to quickfix
 Map("n", "<leader>d", vim.diagnostic.setqflist, "Add diagnostics to quickfix")

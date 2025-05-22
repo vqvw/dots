@@ -12,9 +12,12 @@ return {
 
       function DraculaCustomisation()
         local DarkBg = "#09091b"
+        local LightBg = "#1a1b2f"
 
         UpdateHl("DraculaBoundary", { fg = "NvimDarkGrey4" })
         UpdateHl("DraculaComment", { italic = true })
+        UpdateHl("LineNr", { bg = LightBg })
+        UpdateHl("SignColumn", { bg = LightBg })
 
         SetHl("@lsp.type.class.markdown", { fg = GetHl("DraculaCyan").fg, underline = true })
         SetHl("@markup.heading", { fg = GetHl("DraculaYellow").fg, bold = true })
@@ -31,6 +34,7 @@ return {
         SetHl("@property.yaml", { fg = GetHl("DraculaCyan").fg })
         SetHl("CmpItemAbbrMatch", { fg = GetHl("DraculaCyan").fg, bold = true })
         SetHl("CmpItemAbbrMatchFuzzy", { fg = GetHl("DraculaYellow").fg })
+        SetHl("CursorLineNr", { fg = GetHl("DraculaYellow").fg, bg = LightBg })
         SetHl("DiffviewFilePanelSelected", { fg = GetHl("DraculaYellow").fg, bold = true })
         SetHl("DiffviewFolderSign", { link = "DiffviewFolderName" })
         SetHl("DiffviewNormal", { bg = DarkBg })
@@ -38,6 +42,7 @@ return {
         SetHl("Directory", { fg = GetHl("DraculaCyan").fg })
         SetHl("EndOfBuffer", { fg = GetHl("DraculaComment").fg })
         SetHl("FloatBorder", { fg = GetHl("DraculaBgLighter").bg })
+        SetHl("FoldColumn", { fg = GetHl("DraculaComment").fg, bg = LightBg })
         SetHl("Folded", { fg = GetHl("DraculaBgLighter").bg, bg = DarkBg })
         SetHl("FzfLuaBorder", { fg = GetHl("DraculaBgLighter").bg })
         SetHl("FzfLuaTitle", { link = "@markup.heading" })
@@ -46,14 +51,15 @@ return {
         SetHl("MatchParen", { bg = GetHl("DraculaBgLighter").bg })
         SetHl("Pmenu", {})
         SetHl("QuickFixLine", { fg = GetHl("DraculaYellow").fg, bold = true })
-        SetHl("StatusLine", {})
-        SetHl("StatusLineNC", { fg = GetHl("DraculaBgLighter").bg })
-        SetHl("TabLine", { fg = GetHl("DraculaComment").fg })
-        SetHl("TabLineFill", {})
-        SetHl("TabLineSel", { bg = GetHl("DraculaBgLight").bg, bold = true })
+        SetHl("StatusLine", { bg = LightBg })
+        SetHl("StatusLineNC", { fg = GetHl("DraculaComment").fg, bg = LightBg })
+        SetHl("TabLine", { fg = GetHl("DraculaComment").fg, bg = LightBg })
+        SetHl("TabLineFill", { bg = LightBg })
+        SetHl("TabLineSel", { bg = LightBg, bold = true })
+        SetHl("VertSplit", { bg = "red" })
         SetHl("Visual", { bg = GetHl("DraculaBgLight").bg })
         SetHl("WarningMsg", { link = "@markup.heading" })
-        SetHl("WinSeparator", { fg = GetHl("DraculaBgLight").bg })
+        SetHl("WinSeparator", { fg = GetHl("DraculaBgLight").bg, bg = LightBg })
 
         local DiffAdd = "#1b3536"
         local DiffChange = "#22263f"

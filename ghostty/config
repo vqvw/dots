@@ -1,8 +1,9 @@
 adjust-cell-width = -5%
 background = #121321
-cursor-invert-fg-bg = true
+cursor-color = #ffffff
+cursor-text = #000000
 font-family = RobotoMono Nerd Font
-font-size = 9
+font-size = 12
 font-style = Medium
 font-style-bold = Bold
 font-style-bold-italic = Bold Italic
